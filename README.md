@@ -32,21 +32,21 @@ Run the Ollama Container:
 Start the Ollama container:
 
 bash
-docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+    docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 
 Run the AI Assistant:
 Execute the Python script to start the AI Research Assistant:
 
 bash
-python your_script.py
+    python crewai4.py
 
 Example Usage
 The assistant can be invoked to address specific queries, such as:
 
 python
-task = Task(description="""There is a patient suffering from diabetes, 82 years old.""",
-             agent=general_agent,
-             expected_output="An Ayurvedic herbs and Yoga Treatment.")
+    task = Task(description="""There is a patient suffering from diabetes, 82 years old.""",
+                 agent=general_agent,
+                 expected_output="An Ayurvedic herbs and Yoga Treatment.")
 
 Running on Raspberry Pi
 For users running on a Raspberry Pi, the following commands can help set up the environment:
