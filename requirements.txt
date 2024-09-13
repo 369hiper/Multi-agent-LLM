@@ -1,0 +1,16 @@
+crewai
+langchain
+huggingface_hub
+langchain_community
+duckduckgo-search
+langchain_google_genai
+# crewai[tools]
+crewai-tools
+transformers 
+bitsandbytes
+torch
+torchvision
+torchaudio
+
+
+
